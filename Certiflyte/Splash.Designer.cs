@@ -30,6 +30,7 @@
         {
             appNameLabel = new Label();
             appTypeLabel = new Label();
+            deviceIDLabel = new Label();
             SuspendLayout();
             // 
             // appNameLabel
@@ -52,11 +53,21 @@
             appTypeLabel.TabIndex = 1;
             appTypeLabel.Text = "Enterprise";
             // 
+            // deviceIDLabel
+            // 
+            deviceIDLabel.AutoSize = true;
+            deviceIDLabel.Location = new Point(12, 366);
+            deviceIDLabel.Name = "deviceIDLabel";
+            deviceIDLabel.Size = new Size(118, 20);
+            deviceIDLabel.TabIndex = 2;
+            deviceIDLabel.Text = "Device Identifier";
+            // 
             // Splash
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(718, 395);
+            Controls.Add(deviceIDLabel);
             Controls.Add(appTypeLabel);
             Controls.Add(appNameLabel);
             Name = "Splash";
@@ -71,5 +82,6 @@
 
         private Label appNameLabel;
         private Label appTypeLabel;
+        private Label deviceIDLabel;
     }
 }
